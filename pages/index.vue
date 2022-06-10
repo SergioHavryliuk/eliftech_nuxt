@@ -33,9 +33,10 @@
 <script>
 import { Vue, Component } from 'nuxt-property-decorator';
 import HeaderComponent from '../components/HeaderComponent';
+import ListComponent from '../components/ListComponent';
 
 export default @Component({
-  components: { HeaderComponent }
+  components: { HeaderComponent, ListComponent }
 })
 
 class Index extends Vue {

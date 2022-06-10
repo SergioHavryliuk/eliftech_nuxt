@@ -8,7 +8,14 @@
 </template>
 
 <script>
-export default {
-  name: 'IndexPage'
-};
+import { Vue, Component } from 'nuxt-property-decorator';
+import HeaderComponent from '../components/HeaderComponent';
+import ArticleComponent from '../components/ArticleComponent';
+import ButtonComponent from '../components/ButtonComponent';
+
+export default @Component({
+  components: { HeaderComponent, ArticleComponent, ButtonComponent }
+})
+
+class Contacts extends Vue {}
 </script>
